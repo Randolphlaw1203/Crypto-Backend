@@ -1,0 +1,21 @@
+# String url = "https://www.finnhub.io/api/v1";
+server:
+  port: 8086
+
+api:
+  finnhub:
+    domain: "www.finnhub.io"
+    version: "api/v1"
+    endpoints:
+      quote: "/quote"
+      stock: "/stock"
+      profile2: "/profile2"
+      symbol: symbol
+      token: ${your.api.key.property:defaultKey}
+
+# String websocket = "wss://ws.finnhub.io"
+websocket:
+  finnhub:
+    domain: "ws.finnhub.io"
+    endpoints:
+      token: ${your.api.key.property:defaultKey}

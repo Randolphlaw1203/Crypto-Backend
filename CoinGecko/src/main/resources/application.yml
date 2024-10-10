@@ -1,0 +1,22 @@
+# String url = "https://api.coingecko.com/api/v3/coins/markets";
+server:
+  port: 8085
+
+api:
+  coingecko:
+    domain: "api.coingecko.com"
+    version: "api/v3"
+    endpoints:
+      markets: "/coins/markets"
+      simple: "/simple"
+      supportedCurrencies: "/supported_vs_currencies"
+      currency: vs_currency
+      order: order
+      per_page: per_page
+      page: page
+      sparkline: sparkline
+      price_change_percentage: price_change_percentage
+      key: ${your.api.key.property:defaultKey}
+      coins: "/coins"
+      marketChart: "/market_chart"
+      days: days

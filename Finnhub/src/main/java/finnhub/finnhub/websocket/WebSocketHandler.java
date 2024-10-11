@@ -36,7 +36,7 @@ public class WebSocketHandler extends TextWebSocketHandler {
         if (isValidMessage(payload)) {
             String apiKey = apiKeyConfig.getApiKey();
             URI uri = new URI("wss://ws.finnhub.io?token=" + apiKey);
-            System.out.println("URL:" + uri);
+            // System.out.println("URL:" + uri);
             FinnhubWebSocketClient client =
                     new FinnhubWebSocketClient(uri, session);
             client.connectAndSubscribe(payload);
